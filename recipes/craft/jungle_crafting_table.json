@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "jungle_crafting"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 3
+      }
+    },
+    "result": {
+      "item": "aga:jungle_crafting_table",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "birch:campfire_from_stripped_birch_log"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "pattern": [
+      " | ",
+      "|C|",
+      "###"
+    ],
+    "key": {
+      "|": {
+        "item": "aga:birch_stick"
+      },
+      "#": {
+        "item": "minecraft:stripped_birch_log"
+      },
+      "C": {
+        "item": "minecraft:coal"
+      }
+    },
+    "result": {
+      "item": "minecraft:campfire"
+    }
+  }
+}

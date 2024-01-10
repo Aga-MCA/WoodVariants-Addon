@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "dark_oak:activator_rail"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "pattern": [
+      "XSX",
+      "X#X",
+      "XSX"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:redstone_torch"
+      },
+      "S": {
+        "item": "aga:dark_oak_stick"
+      },
+      "X": {
+        "item": "minecraft:iron_ingot"
+      }
+    },
+    "result": {
+      "item": "minecraft:activator_rail",
+      "count": 6
+    }
+  }
+}

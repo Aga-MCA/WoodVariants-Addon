@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "armor_stand_dark_oak"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "pattern": [
+      "///",
+      " / ",
+      "/_/"
+    ],
+    "key": {
+      "/": {
+        "item": "aga:dark_oak_stick"
+      },
+      "_": {
+      	"item": "minecraft:double_stone_slab",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "spawn_egg",
+      "data": "query.get_actor_info_id('aga:armor_stand_dark_oak')"
+    }
+  }
+}

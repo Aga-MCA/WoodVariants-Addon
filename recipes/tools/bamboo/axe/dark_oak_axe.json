@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "dark_oak_bamboo_axe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      "AB",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 5
+      },
+      "B":{
+        "item": "aga:bamboo_stick"
+      }
+    },
+    "result": {
+      "item": "aga:dark_oak_bamboo_axe"
+    }
+  }
+}

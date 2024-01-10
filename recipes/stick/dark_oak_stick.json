@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "dark_oak_stick"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "A",
+      "A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 5
+      }
+    },
+    "result": {
+      "item": "aga:dark_oak_stick",
+      "count": 4
+    }
+  }
+}

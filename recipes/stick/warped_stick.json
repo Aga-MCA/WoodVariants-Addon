@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "warped_stick"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "A",
+      "A"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:warped_planks",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "aga:warped_stick",
+      "count": 4
+    }
+  }
+}

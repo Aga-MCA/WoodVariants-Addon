@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "jungle:crossbow"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "pattern": [
+      "#I#",
+      "STS",
+      " # "
+    ],
+    "key": {
+      "#": {
+        "item": "aga:jungle_stick"
+      },
+      "S": {
+        "item": "minecraft:string"
+      },
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "T": {
+        "item": "minecraft:tripwire_hook"
+      }
+    },
+    "result": {
+      "item": "minecraft:crossbow"
+    }
+  }
+}

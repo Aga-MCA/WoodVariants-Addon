@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "crimson:soul_campfire_from_crimson_stem2"
+        },
+        "tags": [
+            "carving_table" , "aga"
+        ],
+        "pattern": [
+            " A ",
+            "ABA",
+            "CCC"
+        ],
+        "key": {
+            "A": {
+                "item": "aga:crimson_stick"
+            },
+            "B": {
+                "item": "soul_sand"
+            },
+            "C": {
+                "item": "crimson_stem"
+            }
+        },
+        "result": {
+            "item": "soul_campfire",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

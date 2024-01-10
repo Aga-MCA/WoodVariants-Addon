@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "warped_spruce_axe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      "AB",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:warped_planks",
+        "data": 0
+      },
+      "B":{
+        "item": "aga:spruce_stick"
+      }
+    },
+    "result": {
+      "item": "aga:warped_spruce_axe"
+    }
+  }
+}

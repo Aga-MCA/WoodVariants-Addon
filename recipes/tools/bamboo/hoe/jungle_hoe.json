@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "jungle_bamboo_hoe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      " B",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 3
+      },
+      "B": {
+        "item": "aga:bamboo_stick"
+      }
+    },
+    "result": {
+      "item": "aga:jungle_bamboo_hoe"
+    }
+  }
+}

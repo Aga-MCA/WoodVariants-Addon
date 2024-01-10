@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "crimson_carving_table"
+    },
+
+    "tags": [ "crafting_table" , "carving_table" , "aga" ],
+    "pattern": [
+      " I ",
+      "PPP",
+      "S S"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "P": {
+        "item": "minecraft:crimson_planks"
+      },
+      "S": {
+        "item": "aga:crimson_stick"
+      }
+    },
+    "result": {
+      "item": "aga:crimson_carving_table"
+    }
+  }
+}

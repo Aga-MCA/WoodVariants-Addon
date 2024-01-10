@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "acacia_warped_axe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      "AB",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 4
+      },
+      "B": {
+        "item": "aga:warped_stick"
+      }
+    },
+    "result": {
+      "item": "aga:acacia_warped_axe"
+    }
+  }
+}

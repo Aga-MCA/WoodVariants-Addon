@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "warped:brown_banner"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "group": "banner",
+    "pattern": [
+      "###",
+      "###",
+      " | "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:wool",
+        "data": 12
+      },
+      "|": {
+        "item": "aga:warped_stick"
+      }
+    },
+    "result": {
+      "item": "minecraft:banner",
+      "data": 3
+    }
+  }
+}

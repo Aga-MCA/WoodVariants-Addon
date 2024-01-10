@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "crimson_chest"
+        },
+        "tags": [
+            "carving_table" , "aga"
+        ],
+        "pattern": [
+            "AAA",
+            "A A",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "crimson_planks"
+            }
+        },
+        "result": {
+            "item": "aga:crimson_chest",
+            "count": 1
+        }
+    }
+}

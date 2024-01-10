@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "crimson_jungle_axe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      " B",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:crimson_planks",
+        "data": 0
+      },
+      "B": {
+        "item": "aga:jungle_stick"
+      }
+    },
+    "result": {
+      "item": "aga:crimson_jungle_axe"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "birch_spruce_sword"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "A",
+      "A",
+      "B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 2
+      },
+      "B": {
+        "item": "aga:spruce_stick"
+      }
+    },
+    "result": {
+      "item": "aga:birch_spruce_sword"
+    }
+  }
+}

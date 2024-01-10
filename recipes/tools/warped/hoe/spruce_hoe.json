@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spruce_warped_hoe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      " B",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 1
+      },
+      "B": {
+        "item": "aga:warped_stick"
+      }
+    },
+    "result": {
+      "item": "aga:spruce_warped_hoe"
+    }
+  }
+}

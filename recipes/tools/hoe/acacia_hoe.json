@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "acacia_hoe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      " B",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 4
+      },
+      "B": {
+        "item": "aga:acacia_stick"
+      }
+    },
+    "result": {
+      "item": "aga:acacia_hoe"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "warped_chest"
+        },
+        "tags": [
+            "carving_table" , "aga"
+        ],
+        "pattern": [
+      "AAA",
+      "A A",
+      "AAA"
+    ],
+        "key": {
+            "A": {
+                "item": "warped_planks"
+            }
+        },
+        "result": {
+            "item": "aga:warped_chest",
+            "count": 1
+        }
+    }
+}

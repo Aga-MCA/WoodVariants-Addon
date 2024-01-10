@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "warped_crimson_hoe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      " B",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:warped_planks",
+        "data": 0
+      },
+      "B":{
+        "item": "aga:crimson_stick"
+      }
+    },
+    "result": {
+      "item": "aga:warped_crimson_hoe"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "crimson:yellow_banner"
+    },
+
+    
+    "tags": [ "carving_table" , "aga" ],
+    "group": "banner",
+    "pattern": [
+      "###",
+      "###",
+      " | "
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:wool",
+        "data": 4
+      },
+      "|": {
+        "item": "aga:crimson_stick"
+      }
+    },
+    "result": {
+      "item": "minecraft:banner",
+      "data": 11
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "jungle:stone_shovel_from_blackstone"
+    },
+    "tags": [ "carving_table" , "aga" ],
+    "pattern": [
+      "X",
+      "#",
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "aga:jungle_stick"
+      },
+      "X": {
+        "item": "minecraft:blackstone"
+      }
+    },
+    "result": {
+      "item": "minecraft:stone_shovel"
+    }
+  }
+}

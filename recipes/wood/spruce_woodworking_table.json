@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "spruce_carving_table"
+    },
+
+    "tags": [ "crafting_table" , "carving_table" , "aga" ],
+    "pattern": [
+      " I ",
+      "PPP",
+      "S S"
+    ],
+    "key": {
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "P": {
+        "item": "minecraft:planks",
+		"data": 1
+      },
+      "S": {
+        "item": "aga:spruce_stick"
+      }
+    },
+    "result": {
+      "item": "aga:spruce_carving_table"
+    }
+  }
+}

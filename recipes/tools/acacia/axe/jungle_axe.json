@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "jungle_acacia_axe"
+    },
+    "tags": [
+      "carving_table" , "aga"
+    ],
+    "pattern": [
+      "AA",
+      "AB",
+      " B"
+    ],
+    "key": {
+      "A": {
+        "item": "minecraft:planks",
+        "data": 3
+      },
+      "B": {
+        "item": "aga:acacia_stick"
+      }
+    },
+    "result": {
+      "item": "aga:jungle_acacia_axe"
+    }
+  }
+}

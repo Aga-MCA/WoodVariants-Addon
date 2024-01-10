@@ -1,0 +1,24 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "warped_crafting"
+        },
+        "tags": [
+            "carving_table" , "aga"
+        ],
+        "pattern": [
+            "AA",
+            "AA"
+        ],
+        "key": {
+            "A": {
+                "item": "warped_planks"
+            }
+        },
+        "result": {
+            "item": "aga:warped_crafting_table",
+            "count": 1
+        }
+    }
+}
