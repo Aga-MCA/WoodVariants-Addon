@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "spruce_crimson_pickaxe"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "PPP",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:crimson_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:spruce_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:spruce_crimson_pickaxe"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Variantes de madera / Wood Variants",
+		"description": "§l§4Adrian07YT §l§eAGA§0-§2CRAFT",
+		"uuid": "ea441aa7-477c-40ba-8f20-874b19c29849",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 13, 0]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "aa4ed34a-0a91-481a-af4c-d7685fc64907",
+			"version": [1, 0, 0]
+		}
+	],
+	"dependencies": [	
+		{		
+			"version": [1, 0, 0],
+			"uuid": "78cfd4e1-b34c-4a1f-bb8b-df27725ff05f"
+		}
+	]
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "cherry_oak_hoe"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "PP",
+      "S",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:oak_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:cherry_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:cherry_oak_hoe"
+    }
+  }
+}

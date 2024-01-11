@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "crimson_dark_oak_sword"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "P",
+      "P",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:dark_oak_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:crimson_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:crimson_dark_oak_sword"
+    }
+  }
+}

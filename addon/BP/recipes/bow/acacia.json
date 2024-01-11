@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "acacia_bow"
+    },
+    "tags": [
+      "carving_table",
+      "aga"
+    ],
+    "pattern": [
+      " #X",
+      "# X",
+      " #X"
+    ],
+    "key": {
+      "#": {
+        "item": "aga_wood_variants:acacia_stick"
+      },
+      "X": {
+        "item": "minecraft:string"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:acacia_bow"
+    }
+  }
+}

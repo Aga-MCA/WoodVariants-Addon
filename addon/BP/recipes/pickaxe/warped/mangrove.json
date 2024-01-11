@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "warped_mangrove_pickaxe"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "PPP",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:mangrove_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:warped_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:warped_mangrove_pickaxe"
+    }
+  }
+}

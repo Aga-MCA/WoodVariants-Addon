@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "stone_dark_oak_axe"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "PP",
+      "SP",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:dark_oak_stick"
+      },
+      "P": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:stone_dark_oak_axe"
+    }
+  }
+}

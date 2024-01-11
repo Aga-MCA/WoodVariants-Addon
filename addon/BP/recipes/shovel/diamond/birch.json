@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "diamond_birch_shovel"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "P",
+      "S",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:birch_stick"
+      },
+      "P": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:diamond_birch_shovel"
+    }
+  }
+}

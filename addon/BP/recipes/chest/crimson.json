@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"crimson_chest"},"tags":["crafting_table","aga"],"pattern":["PPP","P P","PPP"],"key":{"P":{"item":"aga_wood_variants:crimson_panels"}},"result":{"item":"aga_wood_variants:crimson_chest","count":1}}}

@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"acacia_composter"},"tags":["crafting_table","aga"],"pattern":["P P","P P","PPP"],"key":{"P":{"item":"aga_wood_variants:acacia_panels_slab"}},"result":{"item":"aga_wood_variants:acacia_composter","count":1}}}

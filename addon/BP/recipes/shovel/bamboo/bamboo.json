@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bamboo_bamboo_shovel"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "P",
+      "S",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:bamboo_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:bamboo_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:bamboo_bamboo_shovel"
+    }
+  }
+}

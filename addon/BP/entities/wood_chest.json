@@ -1,0 +1,135 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aga_wood_variants:wood_chest",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["chest", "inanimate"]
+      },
+      "minecraft:breathable": {
+        "total_supply": 20,
+        "suffocate_time": 0,
+        "breathes_water": true,
+        "breathes_solids": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.75,
+        "height": 0.75
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": [
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:acacia_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:bamboo_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:birch_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:cherry_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:crimson_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:dark_oak_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:jungle_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:oak_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:mangrove_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:spruce_chest"
+              },
+              {
+                "test": "in_block",
+                "subject": "self",
+                "operator": "!=",
+                "value": "aga_wood_variants:warped_chest"
+              }
+            ],
+            "event": "die"
+          }
+        ]
+      },
+      "minecraft:inventory": {
+        "container_type": "container",
+        "inventory_size": 27
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "block_explosion",
+            "deals_damage": false
+          },
+          {
+            "cause": "entity_explosion",
+            "deals_damage": false
+          },
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      }
+    },
+    "events": {
+      "die": {
+        "run_command": {
+          "command": "kill @s"
+        }
+      }
+    }
+  }
+}

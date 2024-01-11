@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "stone_oak_sword"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "P",
+      "P",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:oak_stick"
+      },
+      "P": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:stone_oak_sword"
+    }
+  }
+}

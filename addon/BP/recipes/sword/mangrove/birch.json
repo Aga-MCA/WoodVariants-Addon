@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "mangrove_birch_sword"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "P",
+      "P",
+      "S"
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:birch_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:mangrove_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:mangrove_birch_sword"
+    }
+  }
+}

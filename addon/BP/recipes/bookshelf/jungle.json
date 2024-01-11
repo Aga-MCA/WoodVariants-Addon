@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"jungle_bookshelf"},"tags":["crafting_table","aga"],"pattern":["PPP","BBB","PPP"],"key":{"P":{"item":"aga_wood_variants:jungle_panels"},"B":{"item":"minecraft:book"}},"result":{"item":"aga_wood_variants:jungle_bookshelf","count":1}}}

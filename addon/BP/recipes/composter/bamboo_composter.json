@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"bamboo_composter"},"tags":["crafting_table","aga"],"pattern":["P P","P P","PPP"],"key":{"P":{"item":"aga_wood_variants:bamboo_panels_slab"}},"result":{"item":"aga_wood_variants:bamboo_composter","count":1}}}

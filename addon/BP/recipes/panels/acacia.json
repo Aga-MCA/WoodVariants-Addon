@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"acacia_panels"},"tags":["crafting_table","aga"],"pattern":["S","S"],"key":{"S":{"item":"minecraft:wooden_slab","data":4}},"result":{"item":"aga_wood_variants:acacia_panels","count":1}}}

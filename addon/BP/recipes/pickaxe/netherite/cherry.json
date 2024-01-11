@@ -1,0 +1,15 @@
+{
+  "format_version": "1.17",
+  "minecraft:recipe_smithing_transform": {
+    "description": {
+      "identifier": "netherite_cherry_pickaxe"
+    },
+    "tags": [
+      "smithing_table"
+    ],
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "aga_wood_variants:diamond_cherry_pickaxe",
+    "addition": "minecraft:netherite_ingot",
+    "result": "aga_wood_variants:netherite_cherry_pickaxe"
+  }
+}

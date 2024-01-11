@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"bamboo_bookshelf"},"tags":["crafting_table","aga"],"pattern":["PPP","BBB","PPP"],"key":{"P":{"item":"aga_wood_variants:bamboo_panels"},"B":{"item":"minecraft:book"}},"result":{"item":"aga_wood_variants:bamboo_bookshelf","count":1}}}
