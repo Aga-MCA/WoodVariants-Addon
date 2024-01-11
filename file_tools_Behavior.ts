@@ -899,6 +899,7 @@ function add_tool(m: Material, s: Wood, t: keyof typeof toolsJson) {
   )
     ? fuel
     : (undefined as unknown as typeof fuel);
+    if(m === 'diamond') (item as any)['minecraft:item'].components['tag:minecraft:transformable_items']={}
   const path = `./addon/BP/items/${t as string}/${m}/${s}.json`;
   const folder = path.split('/').slice(0, -1).join('/');
   Deno.mkdirSync(folder, { recursive: true });

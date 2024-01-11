@@ -41,6 +41,7 @@ const bookshelf = {
       'minecraft:map_color': '#ba6337',
       'tag:minecraft:wood': {},
       'tag:wood': {},
+      'minecraft:flammable': true,
       'minecraft:destructible_by_mining': {
         seconds_to_destroy: 2,
       },
@@ -89,6 +90,11 @@ const panels = {
       'minecraft:destructible_by_mining': {
         seconds_to_destroy: 2,
       },
+      'minecraft:flammable': true,
+      'minecraft:geometry': 'geometry.panels',
+      'minecraft:material_instances': {
+        '*': { texture: '', render_method: 'opaque' },
+      },
     },
   },
 };
@@ -109,6 +115,7 @@ const composter = {
       'minecraft:map_color': '#ba6337',
       'tag:minecraft:wood': {},
       'tag:wood': {},
+      'minecraft:flammable': true,
       'minecraft:destructible_by_mining': {
         seconds_to_destroy: 2,
       },
@@ -570,6 +577,140 @@ const chest = {
     ],
   },
 };
+const panels_slab = {
+  format_version: '1.20.30',
+  'minecraft:block': {
+    description: {
+      identifier: '',
+      states: {
+        'aga:double_bit': [false, true],
+      },
+      menu_category: {
+        category: 'construction',
+        group: 'itemGroup.name.slab',
+      },
+      traits: {
+        'minecraft:placement_position': {
+          enabled_states: ['minecraft:vertical_half'],
+        },
+      },
+    },
+    components: {
+      'minecraft:flammable': true,
+      'minecraft:map_color': '#52221D',
+      'minecraft:destructible_by_mining': {
+        seconds_to_destroy: 2,
+      },
+      'tag:wood': {},
+      'tag:minecraft:wood': {},
+      'minecraft:material_instances': {
+        '*': {
+          texture: 'acacia_planks',
+          render_method: 'blend',
+        },
+      },
+    },
+    permutations: [
+      {
+        condition:
+          "!query.block_state('aga:double_bit') && query.block_state('minecraft:vertical_half') == 'bottom'",
+        components: {
+          'minecraft:geometry': {
+            identifier: 'geometry.panels_slab',
+            bone_visibility: {
+              bottom: true,
+              top: false,
+            },
+          },
+          'minecraft:light_dampening': 0,
+          'minecraft:on_interact': {
+            event: 'double',
+            target: 'self',
+            condition: '',
+          },
+          'minecraft:collision_box': {
+            origin: [-8, 0, -8],
+            size: [16, 8, 16],
+          },
+          'minecraft:selection_box': {
+            origin: [-8, 0, -8],
+            size: [16, 8, 16],
+          },
+        },
+      },
+      {
+        condition:
+          "!query.block_state('aga:double_bit') && query.block_state('minecraft:vertical_half')== 'top'",
+        components: {
+          'minecraft:geometry': {
+            identifier: 'geometry.panels_slab',
+            bone_visibility: {
+              bottom: false,
+              top: true,
+            },
+          },
+          'minecraft:light_dampening': 0,
+          'minecraft:on_interact': {
+            event: 'double',
+            target: 'self',
+            condition: '',
+          },
+          'minecraft:collision_box': {
+            origin: [-8, 8, -8],
+            size: [16, 8, 16],
+          },
+          'minecraft:selection_box': {
+            origin: [-8, 8, -8],
+            size: [16, 8, 16],
+          },
+        },
+      },
+      {
+        condition: "query.block_state('aga:double_bit') == true",
+        components: {
+          'minecraft:on_player_destroyed': {
+            event: 'double_slab_loot',
+          },
+          'minecraft:geometry': 'geometry.panels',
+          'minecraft:light_dampening': 15,
+        },
+      },
+    ],
+    events: {
+      double_slab_loot: {
+        spawn_loot: {
+          table: '',
+        },
+      },
+      double: {
+        set_block_state: {
+          'aga:double_bit': true,
+        },
+        decrement_stack: {},
+      },
+    },
+  },
+};
+const panels_slab_loot = {
+  pools: [
+    {
+      rolls: 1,
+      entries: [
+        {
+          type: 'item',
+          name: '',
+          weight: 1,
+          functions: [
+            {
+              function: 'set_count',
+              count: 1,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
 
 const blocks = './addon/BP/blocks/';
 function create_bookshelf(w: Wood) {
@@ -606,6 +747,9 @@ function create_panels(w: Wood) {
   block['minecraft:block'].components['minecraft:map_color'] = `#${color
     .map(c => c.toString(16).padStart(2, '0'))
     .join('')}`;
+  block['minecraft:block'].components['minecraft:material_instances'][
+    '*'
+  ].texture = `${w}_planks`;
   Deno.mkdirSync(`${blocks}/panels`, { recursive: true });
   Deno.writeTextFileSync(`${blocks}/panels/${w}.json`, JSON.stringify(block));
 }
@@ -648,15 +792,59 @@ function create_composter(w: Wood) {
 function create_chest(w: Wood) {
   const color = colors[w] || [0, 0, 0];
   const block = JSON.parse(JSON.stringify(chest)) as typeof chest;
-  const id = `${prefix}:${w}_chest`
+  const id = `${prefix}:${w}_chest`;
   block['minecraft:block'].description.identifier = id;
   block['minecraft:block'].components['minecraft:map_color'] = `#${color
     .map(c => c.toString(16).padStart(2, '0'))
     .join('')}`;
-  block['minecraft:block'].components['minecraft:material_instances']['*'].texture = `${w}_chest`;
-  (block['minecraft:block'].events.place.sequence[0] as any).run_command.command = `summon aga_wood_variants:wood_chest tile.${id}.name ~~~`;
+  block['minecraft:block'].components['minecraft:material_instances'][
+    '*'
+  ].texture = `${w}_chest`;
+  (
+    block['minecraft:block'].events.place.sequence[0] as any
+  ).run_command.command = `summon aga_wood_variants:wood_chest tile.${id}.name ~~~`;
   Deno.mkdirSync(`${blocks}/chest`, { recursive: true });
   Deno.writeTextFileSync(`${blocks}/chest/${w}.json`, JSON.stringify(block));
+}
+
+function create_panels_slab(w: Wood) {
+  const color = colors[w] || [0, 0, 0];
+  const block = JSON.parse(JSON.stringify(panels_slab)) as typeof panels_slab;
+  const id = `${prefix}:${w}_panels_slab`;
+  block['minecraft:block'].description.identifier = id;
+  block['minecraft:block'].components['minecraft:map_color'] = `#${color
+    .map(c => c.toString(16).padStart(2, '0'))
+    .join('')}`;
+  block['minecraft:block'].components['minecraft:material_instances'][
+    '*'
+  ].texture = `${w}_planks`;
+  block['minecraft:block'].permutations[0].components[
+    'minecraft:on_interact'
+  ]!.condition = `query.is_item_name_any('slot.weapon.mainhand',0,'${id}')&&query.block_face==1`;
+  block['minecraft:block'].permutations[1].components[
+    'minecraft:on_interact'
+  ]!.condition = `query.is_item_name_any('slot.weapon.mainhand',0,'${id}')&&query.block_face==0`;
+  block[
+    'minecraft:block'
+  ].events.double_slab_loot.spawn_loot.table = `loot_tables/blocks/panels_slab/${w}.json`;
+
+  Deno.mkdirSync(`${blocks}/panels_slab`, { recursive: true });
+  Deno.writeTextFileSync(
+    `${blocks}/panels_slab/${w}.json`,
+    JSON.stringify(block)
+  );
+
+  const loot = JSON.parse(
+    JSON.stringify(panels_slab_loot)
+  ) as typeof panels_slab_loot;
+  loot.pools[0].entries[0].name = `${id}`;
+  Deno.mkdirSync(`./addon/BP/loot_tables/blocks/panels_slab/`, {
+    recursive: true,
+  });
+  Deno.writeTextFileSync(
+    `./addon/BP/loot_tables/blocks/panels_slab/${w}.json`,
+    JSON.stringify(loot)
+  );
 }
 for (const w of woods) {
   create_chest(w);
@@ -664,4 +852,5 @@ for (const w of woods) {
   create_bookshelf(w);
   create_composter(w);
   create_crafting_table(w);
+  create_panels_slab(w);
 }

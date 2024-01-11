@@ -84,63 +84,75 @@ function translateES(text: Material | Tool): string {
   }
 }
 
+function translateEsOf(
+  text: Material,
+  fn: typeof translateES | typeof translateMX
+) {
+  if (text === 'crimson' || text === 'warped') return fn(text);
+  return `de ${fn(text)}`;
+}
+
 function translateTool(m: Material, s: Wood, t: Tool) {
   const name = `${m}_${s}_${t}`;
   const data = `item.${prefix}:${name}`;
-  es_ES[data] = `${firstLetterUpper(translateES(m))} ${t} con palo ${
-    s === 'crimson' || s === 'warped' ? '' : 'de '
-  }${translateES(s)}`;
-  es_MX[data] = `${firstLetterUpper(translateMX(t))} de ${translateMX(m)} con palo ${
-    s === 'crimson' || s === 'warped' ? '' : 'de '
-  }${translateMX(s)}`;
+  es_ES[data] = `${firstLetterUpper(translateES(t))} ${translateMX(
+    m
+  )} con palo ${translateEsOf(s, translateES)}`;
+  es_MX[data] = `${firstLetterUpper(translateMX(t))} ${translateMX(
+    m
+  )} con palo ${translateEsOf(s, translateMX)}`;
   en_US[data] = `${firstLetterUpper(m)} ${t} with ${s} stick`;
 }
-function translateStick(w:Wood){
-  es_ES[`item.${prefix}:${w}_stick`] = `Palo ${
-    w === 'crimson' || w === 'warped' ? '' : 'de '
-  }${translateES(w)}`;
-  es_MX[`item.${prefix}:${w}_stick`] = `Palo ${
-    w === 'crimson' || w === 'warped' ? '' : 'de '
-  }${translateMX(w)}`;
-  en_US[`item.${prefix}:${w}_stick`] = `${firstLetterUpper(w)} stick`;
-}
-function translateBlocks(w:Wood){
-  // crafting table | mesa de trabajo | mesa de trabajo
-  const _crafting_table = `tile.${prefix}:${w}_crafting_table.name`
-  en_US[_crafting_table] = `${firstLetterUpper(w)} crafting table`;
-  es_MX[_crafting_table] = `Mesa de trabajo de ${translateMX(w)}`;
-  es_ES[_crafting_table] = `Mesa de trabajo de ${translateES(w)}`;
-  // bookshelf      | librero         | estanteria
-  const _bookshelf = `tile.${prefix}:${w}_bookshelf.name`;
-  en_US[_bookshelf] = `${firstLetterUpper(w)} bookshelf`;
-  es_MX[_bookshelf] = `Librero de ${translateMX(w)}`
-  es_ES[_bookshelf] = `Estanteria de ${translateES(w)}`
-  // composter      | compostador     | compostador
-  const _composter = `tile.${prefix}:${w}_composter.name`;
-  en_US[_composter] = `${firstLetterUpper(w)} composter`;
-  es_MX[_composter] = `Compostador de ${translateMX(w)}`
-  es_ES[_composter] = `Compostador de ${translateES(w)}`
-  // panels         | paneles         | paneles
-  const _panels = `tile.${prefix}:${w}_panels.name`;
-  en_US[_panels] = `${firstLetterUpper(w)} panels`;
-  es_MX[_panels] = `Paneles de ${translateMX(w)}`
-  es_ES[_panels] = `Paneles de ${translateES(w)}`
-  // chest          | cofre           | cofre
-  const _chest = `tile.${prefix}:${w}_chest.name`;
-  en_US[_chest] = `${firstLetterUpper(w)} chest`;
-  es_MX[_chest] = `Cofre de ${translateMX(w)}`
-  es_ES[_chest] = `Cofre de ${translateES(w)}`
+function translateItems(w: Wood) {
   // bow            | arco            | arco
   const _bow = `item.${prefix}:${w}_bow`;
   en_US[_bow] = `${firstLetterUpper(w)} bow`;
-  es_MX[_bow] = `Arco de ${translateMX(w)}`
-  es_ES[_bow] = `Arco de ${translateES(w)}`
+  es_MX[_bow] = `Arco ${translateEsOf(w, translateMX)}`;
+  es_ES[_bow] = `Arco ${translateEsOf(w, translateES)}`;
+
+  // stick          | palo            | palo
+  const _stick = `item.${prefix}:${w}_stick`;
+  en_US[_stick] = `${firstLetterUpper(w)} stick`;
+  es_MX[_stick] = `Palo ${translateEsOf(w, translateMX)}`;
+  es_ES[_stick] = `Palo ${translateEsOf(w, translateES)}`;
+}
+function translateBlocks(w: Wood) {
+  // crafting table | mesa de trabajo | mesa de trabajo
+  const _crafting_table = `tile.${prefix}:${w}_crafting_table.name`;
+  en_US[_crafting_table] = `${firstLetterUpper(w)} crafting table`;
+  es_MX[_crafting_table] = `Mesa de trabajo ${translateEsOf(w, translateMX)}`;
+  es_ES[_crafting_table] = `Mesa de trabajo ${translateEsOf(w, translateES)}`;
+  // bookshelf      | librero         | estanteria
+  const _bookshelf = `tile.${prefix}:${w}_bookshelf.name`;
+  en_US[_bookshelf] = `${firstLetterUpper(w)} bookshelf`;
+  es_MX[_bookshelf] = `Librero ${translateEsOf(w, translateMX)}`;
+  es_ES[_bookshelf] = `Estanteria ${translateEsOf(w, translateES)}`;
+  // composter      | compostador     | compostador
+  const _composter = `tile.${prefix}:${w}_composter.name`;
+  en_US[_composter] = `${firstLetterUpper(w)} composter`;
+  es_MX[_composter] = `Compostador ${translateEsOf(w, translateMX)}`;
+  es_ES[_composter] = `Compostador ${translateEsOf(w, translateES)}`;
+  // panels         | paneles         | paneles
+  const _panels = `tile.${prefix}:${w}_panels.name`;
+  en_US[_panels] = `${firstLetterUpper(w)} panels`;
+  es_MX[_panels] = `Paneles ${translateEsOf(w, translateMX)}`;
+  es_ES[_panels] = `Paneles ${translateEsOf(w, translateES)}`;
+  // chest          | cofre           | cofre
+  const _chest = `tile.${prefix}:${w}_chest.name`;
+  en_US[_chest] = `${firstLetterUpper(w)} chest`;
+  es_MX[_chest] = `Cofre ${translateEsOf(w, translateMX)}`;
+  es_ES[_chest] = `Cofre ${translateEsOf(w, translateES)}`;
+  // panels slab    | losa de paneles | losa de paneles
+  const _panels_slab = `tile.${prefix}:${w}_panels_slab.name`;
+  en_US[_panels_slab] = `${firstLetterUpper(w)} panels slab`;
+  es_MX[_panels_slab] = `Losa de paneles ${translateEsOf(w, translateMX)}`;
+  es_ES[_panels_slab] = `Losa de paneles ${translateEsOf(w, translateES)}`;
 }
 
 for (const w of woods) {
   for (const m of material) for (const t of tools) translateTool(m, w, t);
   translateBlocks(w);
-  translateStick(w);
+  translateItems(w);
 }
 Deno.writeTextFileSync(
   `./addon/RP/texts/es_MX.lang`,

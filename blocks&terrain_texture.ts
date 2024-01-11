@@ -78,14 +78,10 @@ function crafting_table(w: Wood) {
   };
 }
 function panels(w: Wood) {
-  const path = `textures/blocks/panels/${w}`;
-  const name = `${w}_panels`;
+  const name = `${w}_planks`;
   blocks[`${prefix}:${w}_panels`] = {
     sound: 'wood',
     textures: `${name}`,
-  };
-  terrain_texture.texture_data[`${name}`] = {
-    textures: `${path}`,
   };
 }
 function composters(w: Wood) {
