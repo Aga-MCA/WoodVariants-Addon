@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shapeless":{"description":{"identifier":"aga_wood_variants:jungle_warped_chest_boat"},"tags":["crafting_table"],"ingredients":[{"item":"aga_wood_variants:warped_chest"},{"item":"minecraft:boat","data":3}],"result":{"item":"aga_wood_variants:jungle_warped_chest_boat"}}}

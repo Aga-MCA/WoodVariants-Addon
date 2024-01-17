@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shapeless":{"description":{"identifier":"aga_wood_variants:cherry_bamboo_chest_boat"},"tags":["crafting_table"],"ingredients":[{"item":"aga_wood_variants:bamboo_chest"},{"item":"minecraft:cherry_boat"}],"result":{"item":"aga_wood_variants:cherry_bamboo_chest_boat"}}}

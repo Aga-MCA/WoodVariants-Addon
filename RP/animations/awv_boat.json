@@ -1,0 +1,1 @@
+{"format_version":"1.8.0","animations":{"animation.awv_boat.setup":{"loop":true,"bones":{"boat":{"rotation":[0,90,0]}}},"animation.awv_boat.move":{"loop":true,"animation_length":1.12,"bones":{"paddle_right":{"rotation":{"0.0":[0,0,0],"1.12":[0,0,360]}},"paddle_left":{"rotation":{"0.0":[0,0,0],"1.12":[0,0,360]}}}}}}

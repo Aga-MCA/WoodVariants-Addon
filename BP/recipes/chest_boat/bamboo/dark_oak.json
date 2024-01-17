@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shapeless":{"description":{"identifier":"aga_wood_variants:bamboo_dark_oak_chest_raft"},"tags":["crafting_table"],"ingredients":[{"item":"aga_wood_variants:dark_oak_chest"},{"item":"minecraft:boat","data":7}],"result":{"item":"aga_wood_variants:bamboo_dark_oak_chest_raft"}}}
