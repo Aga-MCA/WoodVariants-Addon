@@ -1,0 +1,71 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "equipment",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "aga_wood_variants:acacia_bow",
+              "name": "aga_wood_variants:itemGroup.name.bows"
+            },
+            "items": []
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "aga_wood_variants:acacia_stick",
+              "name": "aga_wood_variants:itemGroup.name.sticks"
+            },
+            "items": [
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "aga_wood_variants:acacia_crafting_table",
+              "name": "aga_wood_variants:itemGroup.name.crafting_tables"
+            },
+            "items": [
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "aga_wood_variants:acacia_composter",
+              "name": "aga_wood_variants:itemGroup.name.composters"
+            },
+            "items": [
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "aga_wood_variants:acacia_bookshelf",
+              "name": "aga_wood_variants:itemGroup.name.bookshelfs"
+            },
+            "items": [
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

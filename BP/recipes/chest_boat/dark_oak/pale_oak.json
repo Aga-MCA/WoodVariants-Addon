@@ -1,0 +1,1 @@
+{"format_version":"1.12","minecraft:recipe_shapeless":{"description":{"identifier":"aga_wood_variants:dark_oak_pale_oak_chest_boat"},"tags":["crafting_table"],"ingredients":[{"item":"aga_wood_variants:pale_oak_chest"},{"item":"minecraft:boat","data":5}],"result":{"item":"aga_wood_variants:dark_oak_pale_oak_chest_boat"}}}
