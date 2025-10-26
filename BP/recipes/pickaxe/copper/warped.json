@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "copper_warped_pickaxe"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "PPP",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:warped_stick"
+      },
+      "P": {
+        "item": "minecraft:copper_ingot"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:copper_warped_pickaxe"
+    }
+  }
+}

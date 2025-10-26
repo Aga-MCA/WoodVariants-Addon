@@ -1,1 +1,1 @@
-{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"crimson_panels"},"tags":["crafting_table","aga"],"pattern":["S","S"],"key":{"S":{"item":"minecraft:crimson_slab"}},"result":{"item":"aga_wood_variants:crimson_panels","count":1}}}
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"aga_wood_variants:crimson_panels"},"tags":["crafting_table","aga"],"pattern":["S","S"],"key":{"S":{"item":"minecraft:crimson_slab"}},"result":{"item":"aga_wood_variants:aga_wood_variants:crimson_panels","count":1}}}
