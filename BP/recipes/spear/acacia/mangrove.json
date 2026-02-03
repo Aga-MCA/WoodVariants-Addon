@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "acacia_mangrove_spear"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "  P",
+      " S ",
+      "S  "
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:mangrove_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:acacia_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:acacia_mangrove_spear"
+    }
+  }
+}

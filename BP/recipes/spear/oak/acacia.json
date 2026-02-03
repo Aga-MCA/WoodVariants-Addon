@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "oak_acacia_spear"
+    },
+    "tags": [
+      "crafting_table",
+      "aga"
+    ],
+    "pattern": [
+      "  P",
+      " S ",
+      "S  "
+    ],
+    "key": {
+      "S": {
+        "item": "aga_wood_variants:acacia_stick"
+      },
+      "P": {
+        "item": "aga_wood_variants:oak_panels"
+      }
+    },
+    "result": {
+      "item": "aga_wood_variants:oak_acacia_spear"
+    }
+  }
+}
