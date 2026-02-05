@@ -1,1 +1,1 @@
-{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"aga_wood_variants:oak_panels"},"tags":["crafting_table","aga"],"pattern":["S","S"],"key":{"S":{"item":"minecraft:oak_slab"}},"result":{"item":"aga_wood_variants:aga_wood_variants:oak_panels","count":1}}}
+{"format_version":"1.12","minecraft:recipe_shaped":{"description":{"identifier":"oak_panels"},"tags":["crafting_table","aga"],"pattern":["S","S"],"key":{"S":{"item":"minecraft:oak_slab"}},"result":{"item":"aga_wood_variants:oak_panels","count":1}}}

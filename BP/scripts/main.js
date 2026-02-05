@@ -147,5 +147,5 @@ class ComposterComponent {
 	}
 }
 minecraft.system.beforeEvents.startup.subscribe(({ blockComponentRegistry }) =>
-	blockComponentRegistry.registerCustomComponent('aga:composter', new ComposterComponent()),
+	blockComponentRegistry.registerCustomComponent('aga_wood_variants:composter', new ComposterComponent()),
 );
